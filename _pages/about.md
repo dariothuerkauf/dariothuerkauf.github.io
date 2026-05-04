@@ -2,33 +2,44 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: PhD Candidate in Business and Economics · <a href="https://www.unibas.ch/en.html">University of Basel</a>
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Faculty of Business and Economics</p>
+    <p>University of Basel</p>
+    <p>Peter Merian-Weg 6</p>
+    <p>4052 Basel, Switzerland</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  enabled: false # disabled until you add real news items in `_news/`
+  scrollable: true
+  limit: 5
 
 latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  enabled: false # disabled until you publish blog posts in `_posts/`
+  scrollable: true
+  limit: 3
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+<!--
+  TODO: Replace the bio below with your own. The structure is:
+    1. One short opening line — who you are and what you do.
+    2. A paragraph on your research interests and current focus.
+    3. A short note on background / prior education / what you did before the PhD.
+    4. A closing line on what you're open to (collaborations, talks, etc.) and how to reach you.
+-->
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I am a PhD Candidate in Business and Economics at the [University of Basel](https://www.unibas.ch/en.html), advised by **[Advisor Name]**. My research focuses on **blockchain and cryptoassets**, with a particular interest in **[market microstructure / decentralized finance / token economics / on-chain measurement — pick what fits you]**.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+My current work studies *[one-line description of your main research question — e.g., "how liquidity migrates between centralized and decentralized exchanges"]*. More broadly, I am interested in how distributed-ledger technology reshapes financial markets, intermediation, and the empirical methods we use to study them.
+
+Before starting my PhD, I completed *[your prior degree(s) — e.g., "an MSc in Finance at the University of Basel"]* and worked on *[brief prior experience: research assistant role, internship, project, etc.]*.
+
+I'm always happy to discuss research on blockchain, crypto markets, and empirical finance. The best way to reach me is by [email](mailto:dario.thuerkauf@unibas.ch).

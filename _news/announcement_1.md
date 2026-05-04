@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2026-01-15 09:00:00+0100
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+[Replace with a real news item — e.g., "Started my PhD at the University of Basel."] :tada:
