@@ -185,6 +185,8 @@ exclude:
   - package-lock.json
   - _pages/about_einstein.md
   - _books/
+  - _posts/ # demo posts cite the old Einstein bib; remove this line when you start blogging
+  - _projects/ # demo project pages; remove this line if you re-enable /projects/
   - purgecss.config.js
   - README.md
   - readme_preview/
