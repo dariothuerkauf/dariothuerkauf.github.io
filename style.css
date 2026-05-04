@@ -1,0 +1,265 @@
+/* ==========================================================================
+   Dario Thürkauf — personal site
+   Clean, minimal, single-stylesheet. No build tools. Edit as needed.
+   ========================================================================== */
+
+:root {
+  --text: #1a1a1a;
+  --muted: #6a6a6a;
+  --accent: #8b0000;        /* deep red — change to taste */
+  --accent-hover: #5c0000;
+  --rule: #e6e6e6;
+  --bg: #ffffff;
+  --max-width: 760px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 17px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Charter", "Iowan Old Style", "Source Serif Pro", Georgia,
+    "Times New Roman", serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---------- Layout ---------- */
+
+.wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+@media (max-width: 640px) {
+  html { font-size: 16px; }
+  .wrap { padding: 1.5rem 1.25rem 3rem; }
+}
+
+/* ---------- Header / nav ---------- */
+
+header.site {
+  border-bottom: 1px solid var(--rule);
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+header.site .name {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--text);
+  text-decoration: none;
+  letter-spacing: -0.01em;
+}
+
+header.site nav {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  font-size: 0.95rem;
+}
+
+header.site nav a {
+  color: var(--muted);
+  text-decoration: none;
+  margin-left: 1.1rem;
+}
+
+header.site nav a:hover,
+header.site nav a[aria-current="page"] {
+  color: var(--text);
+}
+
+@media (max-width: 480px) {
+  header.site nav a:first-child { margin-left: 0; }
+  header.site nav a { margin-left: 0.9rem; }
+}
+
+/* ---------- Typography ---------- */
+
+h1, h2, h3 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  letter-spacing: -0.015em;
+  line-height: 1.25;
+  margin: 2.25rem 0 0.75rem;
+}
+
+h1 { font-size: 1.7rem; font-weight: 600; margin-top: 0; }
+h2 { font-size: 1.25rem; font-weight: 600; }
+h3 { font-size: 1.05rem; font-weight: 600; color: var(--text); }
+
+p { margin: 0 0 1rem; }
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.1s ease;
+}
+a:hover {
+  border-bottom-color: var(--accent);
+  color: var(--accent-hover);
+}
+
+ul { padding-left: 1.25rem; }
+ul li { margin: 0.25rem 0; }
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--rule);
+  margin: 2rem 0;
+}
+
+small, .meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+em { color: var(--text); }
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.9em;
+  background: #f4f4f4;
+  padding: 0.1em 0.35em;
+  border-radius: 3px;
+}
+
+/* ---------- Home page profile block ---------- */
+
+.profile {
+  display: grid;
+  grid-template-columns: 1fr 180px;
+  gap: 2rem;
+  align-items: start;
+  margin-bottom: 0.5rem;
+}
+.profile .photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  display: block;
+}
+.profile .meta-block {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-top: 0.75rem;
+  line-height: 1.5;
+}
+.profile .meta-block p { margin: 0 0 0.25rem; }
+
+@media (max-width: 600px) {
+  .profile {
+    grid-template-columns: 1fr;
+  }
+  .profile .photo {
+    max-width: 200px;
+  }
+}
+
+/* ---------- Lists used on research / presentations / cv pages ---------- */
+
+.entry {
+  margin: 1.25rem 0;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--rule);
+}
+.entry:last-child { border-bottom: 0; }
+
+.entry .title {
+  font-weight: 600;
+  color: var(--text);
+}
+.entry .authors {
+  color: var(--text);
+}
+.entry .venue {
+  color: var(--muted);
+  font-style: italic;
+}
+.entry .links {
+  margin-top: 0.4rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  font-size: 0.9rem;
+}
+.entry .links a { margin-right: 0.75rem; }
+.entry .tag {
+  display: inline-block;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  border: 1px solid var(--rule);
+  padding: 0.05em 0.5em;
+  border-radius: 3px;
+  margin-right: 0.5rem;
+  vertical-align: 1px;
+}
+
+/* ---------- CV page two-column rows ---------- */
+
+.cv-section { margin-top: 1.5rem; }
+.cv-row {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 1rem;
+  margin: 0.75rem 0;
+}
+.cv-row .when {
+  color: var(--muted);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+.cv-row .what { }
+
+@media (max-width: 480px) {
+  .cv-row { grid-template-columns: 1fr; gap: 0.1rem; }
+  .cv-row .when { font-size: 0.85rem; }
+}
+
+/* ---------- Footer ---------- */
+
+footer.site {
+  border-top: 1px solid var(--rule);
+  margin-top: 4rem;
+  padding: 1.5rem;
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  font-size: 0.85rem;
+  color: var(--muted);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+}
+footer.site a { color: var(--muted); }
+footer.site a:hover { color: var(--text); border-bottom-color: var(--muted); }
