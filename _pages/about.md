@@ -42,4 +42,6 @@ My current work studies *[one-line description of your main research question �
 
 Before starting my PhD, I completed *[your prior degree(s) — e.g., "an MSc in Finance at the University of Basel"]* and worked on *[brief prior experience: research assistant role, internship, project, etc.]*.
 
+My research interests span public permissionless blockchains and the consensus protocols that secure them. I am particularly drawn to questions around blockchain scaling — including Layer 2 solutions — and the incentive structures they create. Within decentralized finance (DeFi), I study phenomena such as maximal extractable value (MEV) and address clustering, which shed light on how actors behave and interact on-chain. I am also interested in the emerging intersection of blockchain technology with virtual economies and the metaverse.
+
 I'm always happy to discuss research on blockchain, crypto markets, and empirical finance. The best way to reach me is by [email](mailto:dario.thuerkauf@unibas.ch).

@@ -8,7 +8,7 @@
     - name: Position
       value: PhD Candidate
     - name: Languages
-      value: German (native), English (fluent), French (basic)
+      value: German (native), English (fluent), French (basic), Italian (basic)
 
 - title: Research Interests
   type: nested_list
@@ -26,20 +26,18 @@
 - title: Education
   type: time_table
   contents:
-    - title: PhD in Business and Economics
+    - title: PhD, DLT / Fintech
       institution: University of Basel, Switzerland
-      year: 20XX – present
-      description:
-        - "Advisor(s): [Name(s)]"
-        - "Dissertation working title: [Add title]"
-    - title: "MSc in [Field]"
-      institution: "[University, Country]"
-      year: 20XX – 20XX
-      description:
-        - "Thesis: [Title], supervised by [Advisor]"
-    - title: "BSc in [Field]"
-      institution: "[University, Country]"
-      year: 20XX – 20XX
+      year: 2023 – present
+    - title: Master of Science — Business & Technology
+      institution: University of Basel, Switzerland
+      year: 2021 – 2023
+    - title: Bachelor of Arts — Business & Economics
+      institution: University of Basel, Switzerland
+      year: 2018 – 2021
+    - title: Eidg. Maturität, Sportklasse, Profil&#58; Wirtschaft & Recht
+      institution: Gymnasium Liestal, Switzerland
+      year: 2013 – 2016
 
 - title: Research Experience
   type: time_table
@@ -50,14 +48,14 @@
       description:
         - Add 1–2 lines about the work you did.
 
-- title: Visiting Positions
-  type: time_table
-  contents:
-    - title: Visiting PhD Student
-      institution: "[Host institution]"
-      year: 20XX
-      description:
-        - "Host: [Professor]"
+# - title: Visiting Positions
+#   type: time_table
+#   contents:
+#     - title: Visiting PhD Student
+#       institution: "[Host institution]"
+#       year: 20XX
+#       description:
+#         - "Host: [Professor]"
 
 - title: Conference Presentations
   type: time_table
@@ -72,9 +70,9 @@
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 20XX
+    - year: 2023
       items:
-        - "[Award name] — [Granting body]"
+        - "Best Master Thesis — Faculty of Business and Economics, University of Basel (awarded annually for the best master thesis of the preceding academic year)"
 
 - title: Teaching
   type: time_table
@@ -88,9 +86,9 @@
 - title: Skills
   type: list
   contents:
-    - "<u>Programming:</u> Python, R, Stata, SQL"
-    - "<u>Tools:</u> LaTeX, Git, [other]"
-    - "<u>Data:</u> On-chain data (Ethereum, etc.), CRSP/Compustat, [exchange data sources]"
+    - "<u>Programming:</u> Python, R, SQL, MongoDB"
+    - "<u>Tools:</u> LaTeX, Git"
+    - "<u>Data:</u> On-chain (EVM-based blockchains, Bitcoin)"
 
 - title: Other Interests
   type: list
