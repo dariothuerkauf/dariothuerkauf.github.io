@@ -177,6 +177,37 @@ code {
   }
 }
 
+/* ---------- Personal page photos ---------- */
+
+/* Column widths follow each photo's aspect ratio, so the row comes out
+   level without cropping either image. */
+.photos {
+  display: grid;
+  grid-template-columns: 1.5fr 0.667fr;
+  gap: 1rem;
+  align-items: start;
+  margin: 1.5rem 0 0.5rem;
+}
+.photos figure { margin: 0; }
+.photos img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  display: block;
+}
+.photos figcaption {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 0.4rem;
+}
+
+@media (max-width: 600px) {
+  .photos { grid-template-columns: 1fr; gap: 1.25rem; }
+  .photos figure { max-width: 320px; }
+}
+
 /* ---------- Lists used on research / presentations / cv pages ---------- */
 
 .entry {
