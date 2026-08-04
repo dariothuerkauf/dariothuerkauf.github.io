@@ -122,9 +122,6 @@ a:hover {
 ul { padding-left: 1.25rem; }
 ul li { margin: 0.25rem 0; }
 
-/* Bare list: one item per line, no bullets. */
-ul.plain { list-style: none; padding-left: 0; }
-
 hr {
   border: 0;
   border-top: 1px solid var(--rule);
@@ -182,22 +179,25 @@ code {
 
 /* ---------- Personal page photos ---------- */
 
-/* Column widths follow each photo's aspect ratio, so the row comes out
-   level without cropping either image. */
+/* Two matching square tiles; the photos are cropped to fit rather than
+   letterboxed, so the landscape and portrait shots read as a pair. */
 .photos {
   display: grid;
-  grid-template-columns: 1.5fr 0.667fr;
+  grid-template-columns: 1fr 1fr;
   gap: 0.5rem;
-  align-items: start;
-  max-width: 300px;
+  max-width: 600px;
   margin: 1.5rem 0;
 }
 .photos img {
   width: 100%;
-  height: auto;
+  height: auto;          /* override the width/height attrs so aspect-ratio wins */
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
   border-radius: 4px;
   display: block;
 }
+/* Sit the crop window high on the portrait shot to keep the javelin in. */
+.photos img.portrait { object-position: center 35%; }
 
 /* ---------- Lists used on research / presentations / cv pages ---------- */
 
